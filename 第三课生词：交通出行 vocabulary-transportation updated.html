@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>交通工具词卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#4A90E2',
+secondary: '#6B7280'
+},
+borderRadius: {
+'none': '0px',
+'sm': '2px',
+DEFAULT: '4px',
+'md': '8px',
+'lg': '12px',
+'xl': '16px',
+'2xl': '20px',
+'3xl': '24px',
+'full': '9999px',
+'button': '4px'
+}
+}
+}
+}
+</script>
+<style>
+body {
+font-family: 'Noto Sans SC', sans-serif;
+min-height: 1024px;
+background-color: #F5F7FA;
+}
+.word-card {
+background: white;
+transition: all 0.3s ease;
+}
+.word-card:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.sound-btn:hover {
+background-color: rgba(74, 144, 226, 0.1);
+}
+.sound-btn.playing i {
+animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+0%, 100% { transform: rotate(0deg); }
+25% { transform: rotate(-5deg); }
+75% { transform: rotate(5deg); }
+}
+</style>
+</head>
+<body>
+<div class="container mx-auto px-4 py-8">
+<h1 class="text-4xl font-bold text-center mb-8">交通工具词卡</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/0d500cff5988d0b433b0b9d3b0c9f12c.jpg" class="w-full h-[240px] object-cover" alt="交通">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">jiāo tōng</div>
+<div class="flex items-center justify-between">
+<span class="text-3xl font-bold">交通</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Traffic</div>
+<div class="text-gray-700">Движение</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/6f3847a0a3fa88339192df57ee48969c.jpg" class="w-full h-[180px] object-cover" alt="交通工具">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">jiāo tōng gōng jù</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">交通工具</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Vehicle</div>
+<div class="text-gray-700">Транспортное средство</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/bcde26684369a129e5b547936c57d52c.jpg" class="w-full h-[180px] object-cover" alt="飞机">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">fēi jī</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">飞机</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Airplane</div>
+<div class="text-gray-700">Самолет</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/09ab500a1be9f161cb2d83847ab01a26.jpg" class="w-full h-[180px] object-cover" alt="火车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">huǒ chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">火车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Train</div>
+<div class="text-gray-700">Поезд</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/d8abc3d72bde8c45a79f8a2b9aee11f4.jpg" class="w-full h-[180px] object-cover" alt="高铁">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">gāo tiě</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">高铁</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">High-speed Rail</div>
+<div class="text-gray-700">Скоростной поезд</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/3dd53f14f625d1f99650ae7d0dbd2cff.jpg" class="w-full h-[180px] object-cover" alt="汽车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">qì chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">汽车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Car</div>
+<div class="text-gray-700">Автомобиль</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/50e8c1489114f92f680012b7e80f134a.png" class="w-full h-[180px] object-cover" alt="公交车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">gōng jiāo chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">公交车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Bus</div>
+<div class="text-gray-700">Автобус</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/936a04202bcb112884a2cb5170a8dd76.jpg" class="w-full h-[180px] object-cover" alt="摩托车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">mó tuō chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">摩托车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Motorcycle</div>
+<div class="text-gray-700">Мотоцикл</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/b9ae48d153ef709801222346c5f42cec.jpg" class="w-full h-[180px] object-cover" alt="自行车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">zì xíng chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">自行车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Bicycle</div>
+<div class="text-gray-700">Велосипед</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809078/154222387809080/5a0adeecd0f85524d3a1f6b4bd7b4103.png" class="w-full h-[180px] object-cover" alt="共享单车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">gōng xiǎng dān chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">共享单车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Shared Bike</div>
+<div class="text-gray-700">Прокатный велосипед</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/bc792a4b34efe2883a60e2aa8fe86f12.jpg" class="w-full h-[180px] object-cover" alt="电动车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">diàn dòng chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">电动车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Electric Bike</div>
+<div class="text-gray-700">Электрический велосипед</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/893d86a8c70b7b3257a2e43d87f99d7d.jpg" class="w-full h-[180px] object-cover" alt="船">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">chuán</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">船</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Ship</div>
+<div class="text-gray-700">Корабль</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/40be74f54308e805ff8ec2b728952a9a.jpg" class="w-full h-[180px] object-cover" alt="高速公路">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">gāo sù gōng lù</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">高速公路</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Highway</div>
+<div class="text-gray-700">Автомагистраль</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/73df19b2561fb7b49c08fd5edfa6ffc8.jpg" class="w-full h-[180px] object-cover" alt="公路">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">gōng lù</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">公路</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Road</div>
+<div class="text-gray-700">Дорога</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/35864c1fd9bb9f7837d524cf7ca25da0.jpg" class="w-full h-[180px] object-cover" alt="出租车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">chū zū chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">出租车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Taxi</div>
+<div class="text-gray-700">Такси</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/3dc94490f39f535d46d3f2e0e5e43673.jpg" class="w-full h-[180px] object-cover" alt="网约车">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">wǎng yuē chē</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">网约车</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Ride-hailing Car</div>
+<div class="text-gray-700">Такси по вызову</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/40b5b779043f4e0ae8603bd5e9535631.jpg" class="w-full h-[180px] object-cover" alt="地铁">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">dì tiě</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">地铁</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Subway</div>
+<div class="text-gray-700">Метро</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://image-resource.mastergo.com/154222387809079/154222387809081/c87ab306f1e9e25e7aaf035c3d743177.jpg" class="w-full h-[180px] object-cover" alt="人行道">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">rén xíng dào</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">人行道</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Sidewalk</div>
+<div class="text-gray-700">Тротуар</div>
+</div>
+</div>
+<div class="word-card rounded-lg p-4 shadow-md">
+<div class="overflow-hidden rounded-lg mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/f336cab85545740cd6a8a1814f29636a.jpg" class="w-full h-[180px] object-cover" alt="红绿灯">
+</div>
+<div class="space-y-2">
+<div class="text-sm text-gray-500">hóng lǜ dēng</div>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold">红绿灯</span>
+<button class="sound-btn w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10">
+<i class="fas fa-volume-up text-primary"></i>
+</button>
+</div>
+<div class="text-gray-700">Traffic Light</div>
+<div class="text-gray-700">Светофор</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.querySelectorAll('.sound-btn').forEach(button => {
+button.addEventListener('click', function() {
+const word = this.parentElement.querySelector('span').textContent;
+const utterance = new SpeechSynthesisUtterance(word);
+utterance.lang = 'zh-CN';
+utterance.rate = 0.7;
+utterance.pitch = 1.2;
+utterance.voice = speechSynthesis.getVoices().find(voice => voice.lang === 'zh-CN');
+this.classList.add('playing');
+utterance.onend = () => {
+this.classList.remove('playing');
+};
+speechSynthesis.speak(utterance);
+});
+});
+</script>
+</body>
+</html>
